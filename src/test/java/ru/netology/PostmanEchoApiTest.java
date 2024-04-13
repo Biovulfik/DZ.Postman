@@ -7,7 +7,7 @@ import static io.restassured.RestAssured.given;
 public class PostmanEchoApiTest {
     @Test
     void workPost() {
-        String text = "Hi";
+        String text = "Hallo";
         given()
                 .baseUri("https://postman-echo.com")
                 .body(text) // отправляемые данные (заголовки и query можно выставлять аналогично)
